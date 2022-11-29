@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*
+{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.home
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+.home img
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: .1;
+}
+.home div h2
+{
+    color: #fff;
+}
+header
+{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: all .5s ease;
+}
+header label.github
+{
+    display: flex;
+    width: 100px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+header label.github a 
+{
+    transform: translate(0, 1px);
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+header label.github div
+{
+    background: #fff;
+    width: 28px;
+    border-radius: 50%;
+}
+header label.github div img
+{
+    position: relative;
+    left: -1px;
+    width: 30px;
+    cursor: pointer;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+}
+header div
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header.sticky
+{
+    background: #ffff;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header.sticky a, header.sticky label.github a
+{
+    color: #000;
+}
+.about
+{
+    min-height: 100vh;
+}

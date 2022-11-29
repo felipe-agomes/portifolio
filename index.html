@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Felipe | Portifólio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <label class="github">
+            <div>
+                <img src="/img/github.png" alt="GitHub Image">
+            </div>
+            <a href="https://github.com/" target="blank">GitHub</a>
+        </label>
+        <ul>
+            <li><a href="#home" class="li">Home</a></li>
+            <li><a href="#about" class="li">About</a></li>
+            <li><a href="#" class="li">Skills</a></li>
+            <li><a href="#" class="li">Projects</a></li>
+            <li><a href="#" class="li">Contact</a></li>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <img src="/img/teste.jpg" alt="img">
+        <div>
+            <h2>Meu nome é <br>Felipe De Almeida Gomes</br></h2>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi eius facilis dicta nostrum. Sint laborum suscipit cumque unde. Quod consectetur alias laboriosam, cum distinctio perspiciatis ducimus inventore molestiae sequi consequuntur!</h1>
+    </section>
+    <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0)
+        })
+    </script>
+</body>
+</html>
