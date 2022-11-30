@@ -19,33 +19,29 @@
 .home img
 {
     position: absolute;
-    left: 0;
-    right: 0;
     width: 100%;
     opacity: .1;
 }
-.home div
+.home .presentation
 {
     position: relative;
+    display: inline-block;
     top: 50%;
     width: 100%;
-    padding-left: 20px;
+    padding-left: 70px;
 }
 .home div h2
 {
     color: #fff;
     font-size: 1em;
     font-weight: 300; 
-    padding-left: 70px;  
 }
-.home div span
+.home .my--name
 {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: -10px;
     font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;
+    padding-top: 8px;
     padding-left: 10px;
 }
 header
@@ -59,61 +55,53 @@ header
     z-index: 1000;
     transition: all .5s ease;
 }
-header label.github
+header .link--github
 {
-    display: flex;
     width: 100px;
-    position: relative;
     justify-content: space-between;
     align-items: center;
 }
-header label.github a 
+header .link--github a 
 {
-    transform: translate(0, 1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #fff;
     letter-spacing: 1px;
+    font-size: 1.5em;
     font-weight: 700;
 }
-header label.github div
+header .link--github div
 {
     background: #fff;
+    transform: translate(-5px, -4px);
     width: 28px;
+    height: 28px;
     border-radius: 50%;
 }
-header label.github div img
+header .link--github a img
 {
     position: relative;
     left: -1px;
     width: 30px;
     cursor: pointer;
 }
-header ul
+header .navegarion--menu
 {
-    position: relative;
     display: flex;
-
 }
-header ul li
+header .navegarion--menu li
 {
-    position: relative;
     list-style: none;
 }
-header ul li a
+header .navegarion--menu li a
 {
-    position: relative;
     display: inline-block;
     margin: 0 15px;
     letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
-}
-header div
-{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 header.sticky
 {
@@ -121,7 +109,8 @@ header.sticky
     padding: 20px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
-header.sticky a, header.sticky label.github a
+header.sticky .link--github a,
+header.sticky .navegarion--menu a
 {
     color: #000;
 }
