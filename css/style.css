@@ -146,7 +146,7 @@ header.sticky .navegarion--menu a
     min-width: 350px;
     box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
 }
-.about .person--description div h3
+.about .person--description div p
 {
     position: absolute;
     top: 50%;
@@ -163,4 +163,139 @@ header.sticky .navegarion--menu a
     padding: 40px;
     min-width: 400px;
 }
-
+.skills
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #000;
+}
+.skills .header h2
+{
+    color: #fff;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+.skills .cards
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills .cards h3
+{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.skills .cards .skills--card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: rgb(51, 51, 51);
+    margin: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.skills .cards .skills--card span
+{
+    transition: .5s;
+    opacity: 0;
+}
+.skills .cards .skills--card:hover span
+{
+    opacity: 1;
+}
+.skills .cards .skills--card span:nth-child(1)
+{
+    position: absolute;
+    background: linear-gradient(to right, transparent, rgb(44, 64, 245));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    animation: animacao1 2s linear infinite;
+}
+@keyframes animacao1
+{
+    0%
+    {
+        left: -100%;
+    }
+    100%
+    {
+        left: 100%;
+    }
+}
+.skills .cards .skills--card span:nth-child(2)
+{
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, rgb(44, 64, 245));
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    animation: animacao2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animacao2
+{
+    0%
+    {
+        top: -100%;
+    }
+    100%
+    {
+        top: 100%;
+    }
+}
+.skills .cards .skills--card span:nth-child(3)
+{
+    position: absolute;
+    background: linear-gradient(to left, transparent, rgb(44, 64, 245));
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    animation: animacao3 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes animacao3
+{
+    0%
+    {
+        right: -100%;
+    }
+    100%
+    {
+        right: 100%;
+    }
+}
+.skills .cards .skills--card span:nth-child(4)
+{
+    position: absolute;
+    background: linear-gradient(to top, transparent, rgb(44, 64, 245));
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    animation: animacao4 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes animacao4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    100%
+    {
+        bottom: 100%;
+    }
+}
