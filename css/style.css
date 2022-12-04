@@ -330,3 +330,57 @@ header.sticky .navegarion--menu a
         bottom: 100%;
     }
 }
+.projects
+{
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects > div
+{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.projects .project--cards
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projects .cardWork
+{
+    position: relative;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    aspect-ratio: 3/2;
+    width: 350px;
+    margin: 20px;
+    overflow: hidden;
+    transition: .4s ease;
+}
+.projects .cardWork img
+{
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    filter: blur(3px);
+}
+.projects .cardWork h3
+{
+    font-size: .9em;
+    z-index: 1000;
+}
+.projects .cardWork:hover
+{
+    font-size: 2em;
+    width: 400px;
+    margin: -5px;
+}
