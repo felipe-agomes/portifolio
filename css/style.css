@@ -43,19 +43,25 @@
 }
 .home .my--name
 {
+    display: flex;
     position: relative;
     width: 458px;
     padding-top: 8px;
 }
-.home .my--name h2::before
+.home .my--name h2
 {
-    content: '';
-    background: #fff;
-    position: absolute;
-    top: -5px;
-    right: 0;
-    width: 2px;
-    height: 100%;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.home .my--name .cursor
+{
+    position: relative;
+    top: -3px;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
     animation: cursor 1s steps(2) infinite;
 }
 @keyframes cursor
@@ -67,27 +73,6 @@
     71%, 99%
     {
         opacity: 0
-    }
-}
-.home .my--name h2
-{
-    position: relative;
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 700;
-    animation: typing 1.5s steps(22);
-    white-space: nowrap;
-    overflow: hidden;
-}
-@keyframes typing
-{
-    0%
-    {
-        width: 0%;
-    }
-    100%
-    {
-        width: 100%
     }
 }
 header

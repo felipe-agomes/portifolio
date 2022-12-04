@@ -13,26 +13,28 @@
                 <div>
                     <img src="./img/github.png" alt="GitHub Image">
                 </div>GitHub</a>
-        </label>
-        <ul class="navegarion--menu">
-            <li><a href="#home" class="li">Início</a></li>
-            <li><a href="#about" class="li">Sobre</a></li>
-            <li><a href="#skills" class="li">Habilidades</a></li>
-            <li><a href="#" class="li">Projetos</a></li>
-            <li><a href="#" class="li">Contato</a></li>
-        </ul>
+            </label>
+            <ul class="navegarion--menu">
+                <li><a href="#home" class="li">Início</a></li>
+                <li><a href="#about" class="li">Sobre</a></li>
+                <li><a href="#skills" class="li">Habilidades</a></li>
+                <li><a href="#" class="li">Projetos</a></li>
+                <li><a href="#" class="li">Contato</a></li>
+            </ul>
     </header>
+
     <section class="home" id="home">
         <img src="./img/teste.jpg" alt="img">
         <div class="presentation">
             <h2>Olá, me chamo</h2>
             <div class="my--name">
-                <h2>Felipe De Almeida Gomes</h2>
+                <h2 id="myName"></h2>
+                <span class="cursor">|</span>
             </div>
             <h2>Desenvolvedor Web Front-End</h2>
         </div>
     </section>
-
+    
     <section class="about" id="about">
         <div class="about--me">
             <h2>Sobre mim</h2>
@@ -46,7 +48,7 @@
             <img src="./img/fotoProvisoriaDePerfil.png" alt="Foto minha">
         </div>
     </section>
-
+    
     <section class="skills" id="skills">
         <div class="header">
             <h2>habilidades</h2>
@@ -92,5 +94,6 @@
             header.classList.toggle('sticky', window.scrollY > 0)
         })
     </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
