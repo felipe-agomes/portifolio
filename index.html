@@ -8,18 +8,18 @@
 </head>
 <body>
     <header>
-        <label class="link--github">
+        <label class="linkGithub">
             <a href="https://github.com/felipe-AGomes" target="blank">
                 <div>
                     <img src="./img/github.png" alt="GitHub Image">
                 </div>GitHub</a>
             </label>
-            <ul class="navegarion--menu">
+            <ul class="navegarionMenu">
                 <li><a href="#home" class="li">Início</a></li>
                 <li><a href="#about" class="li">Sobre</a></li>
                 <li><a href="#skills" class="li">Habilidades</a></li>
                 <li><a href="#projects" class="li">Projetos</a></li>
-                <li><a href="#" class="li">Contato</a></li>
+                <li><a href="#contact" class="li">Contato</a></li>
             </ul>
     </header>
 
@@ -27,7 +27,7 @@
         <img src="./img/teste.jpg" alt="img">
         <div class="presentation">
             <h2>Olá, me chamo</h2>
-            <div class="my--name">
+            <div class="myName">
                 <h2 id="myName"></h2>
                 <span class="cursor">|</span>
             </div>
@@ -36,25 +36,25 @@
     </section>
     
     <section class="about" id="about">
-        <div class="about--me">
+        <div class="aboutMe">
             <h2>Sobre mim</h2>
         </div>
-        <div class="person--description">
+        <div class="personDescription">
             <div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi eius facilis dicta nostrum. Sint laborum suscipit cumque unde. Quod consectetur alias laboriosam, cum distinctio perspiciatis ducimus inventore molestiae sequi consequuntur!</p>
             </div>
         </div>
-        <div class="profile--img">
+        <div class="profileImg">
             <img src="./img/fotoProvisoriaDePerfil.png" alt="Foto minha">
         </div>
     </section>
     
     <section class="skills" id="skills">
-        <div class="header">
+        <div class="heading">
             <h2>habilidades</h2>
         </div>
-        <div class="cards">
-            <div class="skills--card html">
+        <div class="skillContent">
+            <div class="skillCard">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -62,7 +62,7 @@
                 <h3>html</h3>
                 <img src="./img/imageHtml.png" alt="html">
             </div>
-            <div class="skills--card css">
+            <div class="skillCard">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -70,7 +70,7 @@
                 <h3>css</h3>
                 <img src="./img/imageCss.png" alt="html">
             </div>
-            <div class="skills--card js">
+            <div class="skillCard">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -78,7 +78,7 @@
                 <h3>javascript</h3>
                 <img src="./img/imageJavaScript.png" alt="html">
             </div>
-            <div class="skills--card excel">
+            <div class="skillCard">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -90,29 +90,69 @@
     </section>
     
     <section class="projects" id="projects">
-        <div>
+        <div class="heading">
             <h2>projetos</h2>
         </div>
-        <div class="project--cards">
-            <div class="cardWork">
+        <div class="projectContent">
+            <div class="projectCard">
                 <img src="../img/coming-soon.jpg" alt="coming soon">
                 <h3>work in progress</h3>
             </div>
-            <div class="cardWork">
+            <div class="projectCard">
                 <img src="../img/coming-soon.jpg" alt="coming soon">
                 <h3>work in progress</h3>
             </div>
-            <div class="cardWork">
+            <div class="projectCard">
                 <img src="../img/coming-soon.jpg" alt="coming soon">
                 <h3>work in progress</h3>
             </div>
-            <div class="cardWork">
+            <div class="projectCard">
                 <img src="../img/coming-soon.jpg" alt="coming soon">
                 <h3>work in progress</h3>
             </div>
         </div>
 
     </section>
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Entre em contato comigo</h2>
+        </div>
+        <div class="contactContent">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Endereço</h3>
+                        <p>Monte Verde, Florianópolis - SC</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Telefone</h3>
+                        <p>(48) 98800-6507</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>falmeidagomes13@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formContent">
+                <form action="mailto:falmeidagomes13@gmail.com">
+                    <input type="text" placeholder="Nome Completo">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Sua Mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </section>
+
     <script src="./js/script.js"></script>
 </body>
 </html>

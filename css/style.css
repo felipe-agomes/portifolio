@@ -8,6 +8,16 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+.white
+{
+    color: #fff;
+}
+.heading
+{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 100px; 
+}
 .home
 {
     display: flex;
@@ -17,7 +27,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: #000;
+    background: #111;
     overflow: hidden;
 }
 .home img
@@ -41,21 +51,21 @@
     font-size: 1em;
     font-weight: 300; 
 }
-.home .my--name
+.home .myName
 {
     display: flex;
     position: relative;
     width: 458px;
     padding-top: 8px;
 }
-.home .my--name h2
+.home .myName h2
 {
     text-transform: uppercase;
     font-size: 2em;
     font-weight: 700;
     white-space: nowrap;
 }
-.home .my--name .cursor
+.home .myName .cursor
 {
     position: relative;
     top: -3px;
@@ -86,13 +96,13 @@ header
     z-index: 1000;
     transition: all .5s ease;
 }
-header .link--github
+header .linkGithub
 {
     width: 100px;
     justify-content: space-between;
     align-items: center;
 }
-header .link--github a 
+header .linkGithub a 
 {
     display: flex;
     justify-content: center;
@@ -103,7 +113,7 @@ header .link--github a
     font-size: 1.5em;
     font-weight: 700;
 }
-header .link--github div
+header .linkGithub div
 {
     background: #fff;
     transform: translate(-5px, -4px);
@@ -111,22 +121,22 @@ header .link--github div
     height: 28px;
     border-radius: 50%;
 }
-header .link--github a img
+header .linkGithub a img
 {
     position: relative;
     left: -1px;
     width: 30px;
     cursor: pointer;
 }
-header .navegarion--menu
+header .navegarionMenu
 {
     display: flex;
 }
-header .navegarion--menu li
+header .navegarionMenu li
 {
     list-style: none;
 }
-header .navegarion--menu li a
+header .navegarionMenu li a
 {
     display: inline-block;
     margin: 0 15px;
@@ -140,8 +150,8 @@ header.sticky
     padding: 20px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
-header.sticky .link--github a,
-header.sticky .navegarion--menu a
+header.sticky .linkGithub a,
+header.sticky .navegarionMenu a
 {
     color: #000;
 }
@@ -153,7 +163,7 @@ header.sticky .navegarion--menu a
     justify-content: space-between;
     align-items: center;
 }
-.about .about--me
+.about .aboutMe
 {
     position: absolute;
     text-transform: uppercase;
@@ -162,12 +172,12 @@ header.sticky .navegarion--menu a
     font-weight: 700;
     transform: translate(-50%, -50%);
 }
-.about .person--description
+.about .personDescription
 {
     display: flex;
     width: 50vw;
 }
-.about .person--description div
+.about .personDescription div
 {
     position: relative;
     margin: 0 auto;
@@ -177,18 +187,19 @@ header.sticky .navegarion--menu a
     min-width: 350px;
     box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
 }
-.about .person--description div p
+.about .personDescription div p
 {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     letter-spacing: 1px;
+    color: #000
 }
-.about .profile--img
+.about .profileImg
 {
     width: 50vw;
 }
-.about .profile--img img
+.about .profileImg img
 {
     width: 100%;
     padding: 40px;
@@ -201,7 +212,7 @@ header.sticky .navegarion--menu a
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background: #000;
+    background: #111;
 }
 .skills .header h2
 {
@@ -209,18 +220,18 @@ header.sticky .navegarion--menu a
     margin-bottom: 100px;
     text-transform: uppercase;
 }
-.skills .cards
+.skills .skillContent
 {
     display: flex;
     flex-wrap: wrap;
 }
-.skills .cards h3
+.skills .skillContent h3
 {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
 }
-.skills .cards .skills--card
+.skills .skillContent .skillCard
 {
     display: flex;
     justify-content: center;
@@ -229,24 +240,24 @@ header.sticky .navegarion--menu a
     position: relative;
     width: 200px;
     height: 200px;
-    background: rgb(51, 51, 51);
+    background: #444;
     margin: 20px;
     border-radius: 7px;
     overflow: hidden;
 }
-.skills .cards .skills--card span
+.skills .skillContent .skillCard span
 {
     transition: .5s;
     opacity: 0;
 }
-.skills .cards .skills--card:hover span
+.skills .skillContent .skillCard:hover span
 {
     opacity: 1;
 }
-.skills .cards .skills--card span:nth-child(1)
+.skills .skillContent .skillCard span:nth-child(1)
 {
     position: absolute;
-    background: linear-gradient(to right, transparent, rgb(44, 64, 245));
+    background: linear-gradient(to right, transparent, #2c40f5);
     top: 0;
     left: 0;
     width: 100%;
@@ -264,10 +275,10 @@ header.sticky .navegarion--menu a
         left: 100%;
     }
 }
-.skills .cards .skills--card span:nth-child(2)
+.skills .skillContent .skillCard span:nth-child(2)
 {
     position: absolute;
-    background: linear-gradient(to bottom, transparent, rgb(44, 64, 245));
+    background: linear-gradient(to bottom, transparent, #2c40f5);
     top: 0;
     right: 0;
     width: 2px;
@@ -286,10 +297,10 @@ header.sticky .navegarion--menu a
         top: 100%;
     }
 }
-.skills .cards .skills--card span:nth-child(3)
+.skills .skillContent .skillCard span:nth-child(3)
 {
     position: absolute;
-    background: linear-gradient(to left, transparent, rgb(44, 64, 245));
+    background: linear-gradient(to left, transparent, #2c40f5);
     bottom: 0;
     right: 0;
     width: 100%;
@@ -308,10 +319,10 @@ header.sticky .navegarion--menu a
         right: 100%;
     }
 }
-.skills .cards .skills--card span:nth-child(4)
+.skills .skillContent .skillCard span:nth-child(4)
 {
     position: absolute;
-    background: linear-gradient(to top, transparent, rgb(44, 64, 245));
+    background: linear-gradient(to top, transparent, #2c40f5);
     bottom: 0;
     left: 0;
     width: 2px;
@@ -332,9 +343,8 @@ header.sticky .navegarion--menu a
 }
 .projects
 {
-    background: #000;
+    background: #111;
     min-height: 100vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,14 +356,14 @@ header.sticky .navegarion--menu a
     color: #fff;
     margin-bottom: 100px;
 }
-.projects .project--cards
+.projects .projectContent
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.projects .cardWork
+.projects .projectCard
 {
     position: relative;
     display: flex;
@@ -366,21 +376,118 @@ header.sticky .navegarion--menu a
     overflow: hidden;
     transition: .4s ease;
 }
-.projects .cardWork img
+.projects .projectCard img
 {
     position: absolute;
     width: 100%;
     opacity: 1;
     filter: blur(3px);
 }
-.projects .cardWork h3
+.projects .projectCard h3
 {
     font-size: .9em;
     z-index: 1000;
 }
-.projects .cardWork:hover
+.projects .projectCard:hover
 {
     font-size: 2em;
     width: 400px;
     margin: -5px;
+}
+.contact
+{
+    background: #111;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .heading
+{
+    margin-top: 300px;
+    margin-bottom: -50px;
+}
+.contactContent
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+.contactInfo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 40%;
+    margin-right: 50px;
+    min-width: 250px;
+}
+.contactInfo .box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactInfo .box .text
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contactInfo .box .text h3, p
+{
+    color: #555;
+    margin: 10px 0;
+}
+.contactInfo .box .text h3
+{
+    color: #2c40f5;
+    margin: 10px 0;
+}
+.formContent
+{
+    width: 60%
+}
+.formContent form
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    padding-right: 20%;
+}
+.formContent form input,
+.formContent form textarea
+{
+    border: none;
+    text-decoration: none;
+    outline: none;
+    resize: none;
+    margin: 10px 0;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+}
+.formContent form textarea
+{
+    min-height: 200px;
+}
+.formContent form input::placeholder,
+.formContent form textarea::placeholder
+{
+    color: #999;
+}
+.formContent form input[type="submit"]
+{
+    max-width: 100px;
+    height: 60px;
+    background: #2c40f5;
+    text-transform: uppercase;
+    cursor: pointer;
 }
