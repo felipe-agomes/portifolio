@@ -390,9 +390,8 @@ header.sticky .navegarionMenu a
 }
 .projects .projectCard:hover
 {
-    font-size: 2em;
-    width: 400px;
-    margin: -5px;
+    transform: scale(1.2);
+    font-size: 1.6em;
 }
 .contact
 {
@@ -401,11 +400,12 @@ header.sticky .navegarionMenu a
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-top: 300px;
 }
 .contact .heading
 {
-    margin-top: 300px;
-    margin-bottom: -50px;
+    margin-bottom: 0;
 }
 .contactContent
 {
