@@ -395,7 +395,7 @@ header.sticky .navegarionMenu a
 }
 .contact
 {
-    background: #fff;
+    background: #111;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -406,7 +406,7 @@ header.sticky .navegarionMenu a
 .contact .heading
 {
     margin-bottom: 0;
-    color: #000;
+    color: #fff;
 }
 .contactContent
 {
@@ -449,10 +449,11 @@ header.sticky .navegarionMenu a
 {
     text-align: center;
     text-decoration: none;
-    color: currentColor;
+    color: #fff;
     text-transform: capitalize;
 }
 .contactInfo .box .text h3
 {
+    margin-bottom:5px;
     color: #2c40f5;
 }
