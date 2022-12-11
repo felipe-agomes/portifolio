@@ -29,11 +29,12 @@
     background: #111;
     overflow: hidden;
 }
-.home img
+.home > img
 {
     position: absolute;
     width: 100%;
     opacity: .1;
+    transform: translate(0, -25px)
 }
 .home .presentation
 {
@@ -276,19 +277,28 @@ header.sticky .navegarionMenu a
     text-align: center;
     color: #000
 }
-.about .profileImg
+.about .imgContent
 {
     display: flex;
+    position: relative;
+    right: 3rem;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 16/9;
-    width: 50%;
+    aspect-ratio: 1/1;
+    width: 30%;
     border-radius: 50%;
+    background: radial-gradient(#93cfff, #2c40f5);
+    border: solid 6px #008cff;
     overflow: hidden;
 }
-.about .profileImg img
+.about .imgContent .image
 {
-    width: 100%;
+    background: url(../img/IMG_20221211_153506~2.jpg);
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: -4px -15px;
 }
 .skills
 {
@@ -502,9 +512,10 @@ header.sticky .navegarionMenu a
         margin: 0;
         width: 100%;
     }
-    .about .profileImg
+    .about .imgContent
     {
-        width: 100%;
+        width: 80%;
+        right: 0;
     }
     .projects .projectCard
     {
@@ -517,6 +528,10 @@ header.sticky .navegarionMenu a
 }
 
 @media (max-width: 530px) {
+    *
+    {
+        scroll-behavior: auto;
+    }
     .skills .skillContent
     {
         flex-direction: column;
@@ -611,4 +626,9 @@ header.sticky .navegarionMenu a
     {
         padding: 0;
     }
+    .projects .projectContent .projectCard
+    {
+        min-width: auto;
+    }
+
 }
