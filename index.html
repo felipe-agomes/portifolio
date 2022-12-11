@@ -17,11 +17,14 @@
                 </div>GitHub
             </a>
         </label>
+        <button class="menuButton" onclick="toggleMenu()">
+            <span></span>
+        </button>
         <ul class="navegarionMenu">
-            <li><a href="#home" class="li">Início</a></li>
-            <li><a href="#about" class="li">Sobre</a></li>
-            <li><a href="#skills" class="li">Habilidades</a></li>
-            <li><a href="#projects" class="li">Projetos</a></li>
+            <li><a href="#home" class="li" onclick="toggleMenu()">Início</a></li>
+            <li><a href="#about" class="li" onclick="toggleMenu()">Sobre</a></li>
+            <li><a href="#skills" class="li" onclick="toggleMenu()">Habilidades</a></li>
+            <li><a href="#projects" class="li" onclick="toggleMenu()">Projetos</a></li>
         </ul>
     </header>
 
@@ -146,6 +149,16 @@
         </div>
     </section>
     <script src="./js/script.js"></script>
+    <script>
+        const button = document.querySelector('.menuButton')
+        const navegarionMenu = document.querySelector('.navegarionMenu')
+
+
+        const toggleMenu = () => {
+            button.classList.toggle('active')
+            navegarionMenu.classList.toggle('display')
+        }
+    </script>
 </body>
 
 </html>
