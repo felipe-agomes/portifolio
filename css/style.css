@@ -45,6 +45,10 @@
     width: 100%;
     text-align: center;
 }
+.home .presentation .myName
+{
+    margin: 10px 0;
+}
 .home .presentation h2
 {
     color: #fff;
@@ -69,7 +73,6 @@
     width: 20px;
     height: 20px;
     opacity: 1;
-    /* transform: translate(-13px, 0); */
 }
 .home .presentation .contactContent div img
 {
@@ -192,11 +195,11 @@ header.sticky .navegarionMenu a
 {
     position: relative;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    padding: 75px 50px 20px;
+    padding: 100px 50px;
+    gap: 70px;
 }
 .about .heading
 {
@@ -205,10 +208,10 @@ header.sticky .navegarionMenu a
 }
 .about .aboutContent
 {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
 }
 .about .aboutContent .personDescription
 {
@@ -218,6 +221,7 @@ header.sticky .navegarionMenu a
     padding: 40px;
     min-width: 360px;
     width: 50%;
+    margin-right: 40px;
     box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
 }
 .about .aboutContent .personDescription p
@@ -228,23 +232,28 @@ header.sticky .navegarionMenu a
 }
 .about .profileImg
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16/9;
     min-width: 360px;
     width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .about .profileImg img
 {
-    aspect-ratio: 16/9;
     width: 100%;
 }
 .skills
 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
     min-height: 100vh;
     background: #111;
-    padding: 75px 50px 0;
+    padding: 100px 50px;
+    gap: 70px;
 }
 .skills .header h2
 {
@@ -382,8 +391,8 @@ header.sticky .navegarionMenu a
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 75px 50px 20px;
-    gap: 20px;
+    padding: 100px 50px;
+    gap: 70px;
 }
 .projects .heading
 {
@@ -406,7 +415,7 @@ header.sticky .navegarionMenu a
     align-items: center;
     flex-direction: column;
     aspect-ratio: 16/9;
-    min-width: 350px;
+    min-width: 300px;
     overflow: hidden;
     transition: .4s ease;
 }
