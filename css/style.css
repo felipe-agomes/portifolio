@@ -1,24 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-*
-{
+* {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.white
-{
+
+.white {
     color: #fff;
 }
-.heading
-{
+
+.heading {
     text-transform: uppercase;
     color: #fff;
 }
-.home
-{
+
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,15 +28,15 @@
     background: #111;
     overflow: hidden;
 }
-.home > img
-{
+
+.home>img {
     position: absolute;
     width: 100%;
     opacity: .1;
     transform: translate(0, -25px)
 }
-.home .presentation
-{
+
+.home .presentation {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,23 +45,23 @@
     width: 100%;
     text-align: center;
 }
-.home .presentation .myName
-{
+
+.home .presentation .myName {
     margin: 10px 0;
 }
-.home .presentation h2
-{
+
+.home .presentation h2 {
     display: inline-block;
     color: #fff;
     font-size: 1em;
-    font-weight: 300; 
+    font-weight: 300;
 }
-.home .presentation span
-{
+
+.home .presentation span {
     display: inline-block;
 }
-.home .presentation .contactContent
-{
+
+.home .presentation .contactContent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,42 +72,42 @@
     padding-top: 5px;
     border-top: #fff solid 1px;
 }
-.home .presentation .contactContent div
-{
+
+.home .presentation .contactContent div {
     position: relative;
     width: 20px;
     height: 20px;
     opacity: 1;
 }
-.home .presentation .contactContent div img
-{
+
+.home .presentation .contactContent div img {
     position: absolute;
     top: 0;
     left: 0;
     width: 20px;
     opacity: 1;
 }
-.home .presentation .contactContent .whatsapp img
-{
+
+.home .presentation .contactContent .whatsapp img {
     width: 24px;
     transform: translate(0, -2.5px);
 }
-.home .myName
-{
+
+.home .myName {
     display: flex;
     position: relative;
     width: 458px;
     padding-top: 8px;
 }
-.home .myName h2
-{
+
+.home .myName h2 {
     text-transform: uppercase;
     font-size: 2em;
     font-weight: 700;
     white-space: nowrap;
 }
-.home .myName .cursor
-{
+
+.home .myName .cursor {
     position: relative;
     top: -3px;
     font-size: 2em;
@@ -116,19 +115,21 @@
     color: #fff;
     animation: cursor 1s steps(2) infinite;
 }
-@keyframes cursor
-{
-    0%, 70%
-    {
+
+@keyframes cursor {
+
+    0%,
+    70% {
         opacity: 1;
     }
-    71%, 99%
-    {
+
+    71%,
+    99% {
         opacity: 0
     }
 }
-header
-{
+
+header {
     display: flex;
     width: 100%;
     position: fixed;
@@ -138,14 +139,14 @@ header
     z-index: 1000;
     transition: all .5s ease;
 }
-header .linkGithub
-{
+
+header .linkGithub {
     width: 100px;
     justify-content: space-between;
     align-items: center;
 }
-header .linkGithub a 
-{
+
+header .linkGithub a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,39 +156,39 @@ header .linkGithub a
     font-size: 1.5em;
     font-weight: 700;
 }
-header .linkGithub div
-{
+
+header .linkGithub div {
     background: #fff;
     transform: translate(-5px, -4px);
     width: 28px;
     height: 28px;
     border-radius: 50%;
 }
-header .linkGithub a img
-{
+
+header .linkGithub a img {
     position: relative;
     left: -1px;
     width: 30px;
     cursor: pointer;
 }
-header .navegarionMenu
-{
+
+header .navegarionMenu {
     display: flex;
 }
-header .navegarionMenu li
-{
+
+header .navegarionMenu li {
     list-style: none;
 }
-header .navegarionMenu li a
-{
+
+header .navegarionMenu li a {
     display: inline-block;
     margin: 0 15px;
     letter-spacing: 1px;
     text-decoration: none;
     color: #fff;
 }
-header .menuButton
-{
+
+header .menuButton {
     position: absolute;
     right: 20px;
     background: none;
@@ -198,16 +199,16 @@ header .menuButton
     cursor: pointer;
     z-index: 1000;
 }
-header .menuButton span
-{
+
+header .menuButton span {
     display: block;
     background: #000;
     height: 2px;
     width: 20px;
     transition: 0.6s;
 }
-header .menuButton span::before
-{
+
+header .menuButton span::before {
     display: block;
     position: relative;
     top: -7px;
@@ -217,8 +218,8 @@ header .menuButton span::before
     background: #000;
     transition: 0.6s;
 }
-header .menuButton span::after
-{
+
+header .menuButton span::after {
     display: block;
     position: relative;
     top: 5px;
@@ -228,19 +229,19 @@ header .menuButton span::after
     background: #000;
     transition: 0.6s;
 }
-header.sticky
-{
+
+header.sticky {
     background: #ffff;
     padding: 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
+
 header.sticky .linkGithub a,
-header.sticky .navegarionMenu a
-{
+header.sticky .navegarionMenu a {
     color: #000;
 }
-.about
-{
+
+.about {
     position: relative;
     display: flex;
     align-items: center;
@@ -249,36 +250,36 @@ header.sticky .navegarionMenu a
     padding: 100px 50px;
     gap: 70px;
 }
-.about .heading
-{
+
+.about .heading {
     text-transform: uppercase;
     color: #000;
 }
-.about .aboutContent
-{
+
+.about .aboutContent {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.about .aboutContent .personDescription
-{
+
+.about .aboutContent .personDescription {
     aspect-ratio: 16/9;
     display: flex;
     align-items: center;
     padding: 40px;
     width: 50%;
     margin-right: 40px;
-    box-shadow: -10px 10px 30px rgba(0,0,0,0.2);
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
 }
-.about .aboutContent .personDescription p
-{
+
+.about .aboutContent .personDescription p {
     letter-spacing: 1px;
     text-align: center;
     color: #000
 }
-.about .imgContent
-{
+
+.about .imgContent {
     display: flex;
     position: relative;
     right: 3rem;
@@ -291,8 +292,8 @@ header.sticky .navegarionMenu a
     border: solid 6px #008cff;
     overflow: hidden;
 }
-.about .imgContent .image
-{
+
+.about .imgContent .image {
     background: url(../img/IMG_20221211_153506.jpg);
     width: 90%;
     height: 90%;
@@ -300,8 +301,8 @@ header.sticky .navegarionMenu a
     background-size: cover;
     background-position: -4px -15px;
 }
-.skills
-{
+
+.skills {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -310,21 +311,21 @@ header.sticky .navegarionMenu a
     padding: 100px 50px;
     gap: 70px;
 }
-.skills .header h2
-{
+
+.skills .header h2 {
     color: #fff;
     text-transform: uppercase;
 }
-.skills .skillContent
-{
+
+.skills .skillContent {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
 }
-.skills .skillContent .skillCard
-{
+
+.skills .skillContent .skillCard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,23 +337,23 @@ header.sticky .navegarionMenu a
     border-radius: 7px;
     overflow: hidden;
 }
-.skills .skillContent .skillCard h3
-{
+
+.skills .skillContent .skillCard h3 {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
 }
-.skills .skillContent .skillCard span
-{
+
+.skills .skillContent .skillCard span {
     transition: .5s;
     opacity: 0;
 }
-.skills .skillContent .skillCard:hover span
-{
+
+.skills .skillContent .skillCard:hover span {
     opacity: 1;
 }
-.skills .skillContent .skillCard span:nth-child(1)
-{
+
+.skills .skillContent .skillCard span:nth-child(1) {
     position: absolute;
     background: linear-gradient(to right, transparent, #2c40f5);
     top: 0;
@@ -361,19 +362,18 @@ header.sticky .navegarionMenu a
     height: 2px;
     animation: animacao1 2s linear infinite;
 }
-@keyframes animacao1
-{
-    0%
-    {
+
+@keyframes animacao1 {
+    0% {
         left: -100%;
     }
-    100%
-    {
+
+    100% {
         left: 100%;
     }
 }
-.skills .skillContent .skillCard span:nth-child(2)
-{
+
+.skills .skillContent .skillCard span:nth-child(2) {
     position: absolute;
     background: linear-gradient(to bottom, transparent, #2c40f5);
     top: 0;
@@ -383,19 +383,18 @@ header.sticky .navegarionMenu a
     animation: animacao2 2s linear infinite;
     animation-delay: 1s;
 }
-@keyframes animacao2
-{
-    0%
-    {
+
+@keyframes animacao2 {
+    0% {
         top: -100%;
     }
-    100%
-    {
+
+    100% {
         top: 100%;
     }
 }
-.skills .skillContent .skillCard span:nth-child(3)
-{
+
+.skills .skillContent .skillCard span:nth-child(3) {
     position: absolute;
     background: linear-gradient(to left, transparent, #2c40f5);
     bottom: 0;
@@ -405,19 +404,18 @@ header.sticky .navegarionMenu a
     animation: animacao3 2s linear infinite;
     animation-delay: 2s;
 }
-@keyframes animacao3
-{
-    0%
-    {
+
+@keyframes animacao3 {
+    0% {
         right: -100%;
     }
-    100%
-    {
+
+    100% {
         right: 100%;
     }
 }
-.skills .skillContent .skillCard span:nth-child(4)
-{
+
+.skills .skillContent .skillCard span:nth-child(4) {
     position: absolute;
     background: linear-gradient(to top, transparent, #2c40f5);
     bottom: 0;
@@ -427,19 +425,18 @@ header.sticky .navegarionMenu a
     animation: animacao4 2s linear infinite;
     animation-delay: 3s;
 }
-@keyframes animacao4
-{
-    0%
-    {
+
+@keyframes animacao4 {
+    0% {
         bottom: -100%;
     }
-    100%
-    {
+
+    100% {
         bottom: 100%;
     }
 }
-.projects
-{
+
+.projects {
     background: #111;
     min-height: 100vh;
     display: flex;
@@ -448,24 +445,24 @@ header.sticky .navegarionMenu a
     padding: 100px 50px;
     gap: 70px;
 }
-.projects .heading
-{
+
+.projects .heading {
     text-transform: uppercase;
     color: #fff;
 }
-.projects .projectContent
-{
+
+.projects .projectContent {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
 }
-.projects .projectCard
-{
+
+.projects .projectCard {
     position: relative;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     aspect-ratio: 16/9;
@@ -473,122 +470,119 @@ header.sticky .navegarionMenu a
     overflow: hidden;
     transition: .4s ease;
 }
-.projects .projectCard img
-{
+
+.projects .projectCard img {
     position: absolute;
     width: 100%;
     opacity: 1;
     filter: blur(3px);
 }
-.projects .projectCard h3
-{
+
+.projects .projectCard h3 {
     text-transform: uppercase;
     font-size: .9em;
     z-index: 1000;
     color: #fff;
 }
-.projects .projectCard:hover
-{
+
+.projects .projectCard:hover {
     transform: scale(1.2);
     font-size: 1.6em;
 }
 
 /* responsividade */
 
-@media (max-width: 760px)
-{
-    header
-    {
+@media (max-width: 760px) {
+    header {
         padding: 20px;
     }
-    .about .aboutContent 
-    {
+
+    .about .aboutContent {
         flex-direction: column-reverse;
         gap: 30px;
     }
-    .about .aboutContent .personDescription
-    {
+
+    .about .aboutContent .personDescription {
         margin: 0;
         width: 100%;
     }
-    .about .imgContent
-    {
+
+    .about .imgContent {
         width: 80%;
         right: 0;
     }
-    .projects .projectCard
-    {
+
+    .projects .projectCard {
         width: 100%;
     }
-    .projects .projectCard:hover
-    {
+
+    .projects .projectCard:hover {
         transform: scale(1);
     }
 }
 
 @media (max-width: 530px) {
-    *
-    {
+    * {
         scroll-behavior: auto;
     }
-    .skills .skillContent
-    {
+
+    .skills .skillContent {
         flex-direction: column;
         width: 100%;
     }
-    .skills .skillContent .skillCard
-    {    
+
+    .skills .skillContent .skillCard {
         width: 100%;
         height: 200px;
     }
-    .home .presentation .myName 
-    {
+
+    .home .presentation .myName {
         transform: translateX(113.25px);
     }
+
     .home .presentation .myName h2,
-    .home .presentation .myName span
-    {
+    .home .presentation .myName span {
         text-align: center;
         font-size: 1rem;
     }
-    header
-    {
+
+    header {
         flex-direction: column;
         background: #fff;
     }
-    header .linkGithub
-    {
+
+    header .linkGithub {
         align-self: flex-start;
         z-index: 1000;
     }
-    header .linkGithub a
-    {
+
+    header .linkGithub a {
         color: #000;
     }
-    header .menuButton
-    {
+
+    header .menuButton {
         visibility: visible;
         display: block;
         cursor: pointer;
         width: 20px;
         height: 20px;
     }
-    header .menuButton.active > span
-    {
+
+    header .menuButton.active>span {
         background: transparent;
     }
-    header .menuButton.active span::before
-    {
+
+    header .menuButton.active span::before {
         transform-origin: center;
         transform: translate(0, 7px) rotate(-135deg);
     }
-    header .menuButton.active span::after
-    {
+
+    header .menuButton.active span::after {
         transform-origin: center;
         transform: translate(0, -7px) rotate(135deg);
     }
-    header .navegarionMenu
-    {
+
+    header .navegarionMenu {
         visibility: hidden;
         overflow: hidden;
         position: absolute;
@@ -602,31 +596,30 @@ header.sticky .navegarionMenu a
         height: 0;
         transition: 0.4s;
     }
-    header .navegarionMenu.display
-    {
+
+    header .navegarionMenu.display {
         visibility: visible;
         height: calc(100vh - 68px);
     }
-    header .navegarionMenu li a 
-    {
+
+    header .navegarionMenu li a {
         color: #000;
     }
 }
 
-@media (max-width: 450px)
-{
+@media (max-width: 450px) {
+
     .about,
     .skills,
-    .projects
-    {
+    .projects {
         padding: 100px 10px;
     }
-    .about .aboutContent .personDescription
-    {
+
+    .about .aboutContent .personDescription {
         padding: 0;
     }
-    .projects .projectContent .projectCard
-    {
+
+    .projects .projectContent .projectCard {
         min-width: auto;
     }
 
