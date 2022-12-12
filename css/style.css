@@ -443,7 +443,6 @@ header.sticky .navegarionMenu a
     background: #111;
     min-height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     padding: 100px 50px;
