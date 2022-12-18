@@ -1,167 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title>Portfólio | Felipe</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Portfólio | Felipe</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+	<body>
+		<header>
+			<label class="linkGithub">
+				<a href="https://github.com/felipe-AGomes" target="_blank">
+					<div>
+						<img src="img/github.png" alt="GitHub Image" />
+					</div>
+					GitHub
+				</a>
+			</label>
+			<button class="menuButton" onclick="toggleMenu()">
+				<span></span>
+			</button>
+			<ul class="navegarionMenu">
+				<li>
+					<a href="#home" class="li" onclick="toggleMenu()">Início</a>
+				</li>
+				<li>
+					<a href="#about" class="li" onclick="toggleMenu()">Sobre</a>
+				</li>
+				<li>
+					<a href="#skills" class="li" onclick="toggleMenu()"
+						>Habilidades</a
+					>
+				</li>
+				<li>
+					<a href="#projects" class="li" onclick="toggleMenu()"
+						>Projetos</a
+					>
+				</li>
+			</ul>
+		</header>
 
-<body>
-    <header>
-        <label class="linkGithub">
-            <a href="https://github.com/felipe-AGomes" target="_blank">
-                <div>
-                    <img src="img/github.png" alt="GitHub Image">
-                </div>GitHub
-            </a>
-        </label>
-        <button class="menuButton" onclick="toggleMenu()">
-            <span></span>
-        </button>
-        <ul class="navegarionMenu">
-            <li><a href="#home" class="li" onclick="toggleMenu()">Início</a></li>
-            <li><a href="#about" class="li" onclick="toggleMenu()">Sobre</a></li>
-            <li><a href="#skills" class="li" onclick="toggleMenu()">Habilidades</a></li>
-            <li><a href="#projects" class="li" onclick="toggleMenu()">Projetos</a></li>
-        </ul>
-    </header>
+		<section class="home" id="home">
+			<img src="img/IMG_20221211_154038.JPG" alt="img" />
+			<div class="presentation">
+				<h2>Olá, me chamo</h2>
+				<div class="myName">
+					<h2 id="myName"></h2>
+					<span class="cursor">|</span>
+				</div>
+				<h2>Desenvolvedor Web Front-End</h2>
+				<div class="contactContent">
+					<div class="instagram">
+						<a
+							href="https://www.instagram.com/f.almeida13/"
+							target="_blank"
+						>
+							<img src="img/instagram.png" alt="instagram" />
+						</a>
+					</div>
 
-    <section class="home" id="home">
-        <img src="img/IMG_20221211_154038.JPG" alt="img">
-        <div class="presentation">
-            <h2>Olá, me chamo</h2>
-            <div class="myName">
-                <h2 id="myName"></h2>
-                <span class="cursor">|</span>
-            </div>
-            <h2>Desenvolvedor Web Front-End</h2>
-            <div class="contactContent">
-                <div class="instagram">
-                    <a href="https://www.instagram.com/f.almeida13/" target="_blank">
-                        <img src="img/instagram.png" alt="instagram">
-                    </a>
-                </div>
+					<div class="linkedin">
+						<a
+							href="https://www.linkedin.com/in/felipe-de-almeida-gomes/"
+							target="_blank"
+						>
+							<img src="img/linkedin.png" alt="linkedin" />
+						</a>
+					</div>
 
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/felipe-de-almeida-gomes/" target="_blank">
-                        <img src="img/linkedin.png" alt="linkedin">
-                    </a>
-                </div>
+					<div class="github">
+						<a
+							href="https://github.com/felipe-AGomes"
+							target="_blank"
+						>
+							<img src="img/githubWhite.png" alt="github" />
+						</a>
+					</div>
 
-                <div class="github">
-                    <a href="https://github.com/felipe-AGomes" target="_blank">
-                        <img src="img/githubWhite.png" alt="github">
-                    </a>
-                </div>
+					<div class="whatsapp">
+						<a
+							href="https://api.whatsapp.com/send/?phone=5548988006507"
+							target="_blank"
+						>
+							<img src="img/whatsapp.png" alt="whatsapp" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                <div class="whatsapp">
-                    <a href="https://api.whatsapp.com/send/?phone=5548988006507" target="_blank">
-                        <img src="img/whatsapp.png" alt="whatsapp">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+		<section class="about" id="about">
+			<div class="heading">
+				<h2>Sobre mim</h2>
+			</div>
+			<div class="aboutContent">
+				<div class="personDescription">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Itaque blanditiis mollitia quos voluptatum aut ut
+						perferendis in! Doloremque optio quibusdam nisi atque
+						est veritatis laudantium, voluptatem perferendis eius
+						dignissimos consequatur.
+					</p>
+				</div>
+				<div class="imgContent">
+					<div class="image"></div>
+				</div>
+			</div>
+		</section>
 
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>Sobre mim</h2>
-        </div>
-        <div class="aboutContent">
-            <div class="personDescription">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque blanditiis mollitia quos voluptatum
-                    aut ut perferendis in! Doloremque optio quibusdam nisi atque est veritatis laudantium, voluptatem
-                    perferendis eius dignissimos consequatur.
-                </p>
-            </div>
-            <div class="imgContent">
-                <div class="image">
-                </div>
-            </div>
-        </div>
-    </section>
+		<section class="skills" id="skills">
+			<div class="heading">
+				<h2>habilidades</h2>
+			</div>
+			<div class="skillContent">
+				<div class="skillCard">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<h3>html</h3>
+					<img src="img/imageHtml.png" alt="html" />
+				</div>
+				<div class="skillCard">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<h3>css</h3>
+					<img src="img/imageCss.png" alt="html" />
+				</div>
+				<div class="skillCard">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<h3>javascript</h3>
+					<img src="img/imageJavaScript.png" alt="html" />
+				</div>
+				<div class="skillCard">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<h3>excel</h3>
+					<img src="img/imageExcel.png" alt="html" />
+				</div>
+			</div>
+		</section>
 
-    <section class="skills" id="skills">
-        <div class="heading">
-            <h2>habilidades</h2>
-        </div>
-        <div class="skillContent">
-            <div class="skillCard">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <h3>html</h3>
-                <img src="img/imageHtml.png" alt="html">
-            </div>
-            <div class="skillCard">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <h3>css</h3>
-                <img src="img/imageCss.png" alt="html">
-            </div>
-            <div class="skillCard">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <h3>javascript</h3>
-                <img src="img/imageJavaScript.png" alt="html">
-            </div>
-            <div class="skillCard">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <h3>excel</h3>
-                <img src="img/imageExcel.png" alt="html">
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="heading">
-            <h2>projetos</h2>
-        </div>
-        <div class="projectContent">
-            <div class="projectCard">
-                <img src="img/coming-soon.jpg" alt="coming soon">
-                <h3>work in progress</h3>
-            </div>
-            <div class="projectCard">
-                <img src="img/coming-soon.jpg" alt="coming soon">
-                <h3>work in progress</h3>
-            </div>
-            <div class="projectCard">
-                <img src="img/coming-soon.jpg" alt="coming soon">
-                <h3>work in progress</h3>
-            </div>
-            <div class="projectCard">
-                <img src="img/coming-soon.jpg" alt="coming soon">
-                <h3>work in progress</h3>
-            </div>
-            <div class="projectCard">
-                <img src="img/coming-soon.jpg" alt="coming soon">
-                <h3>work in progress</h3>
-            </div>
-        </div>
-    </section>
-    <script src="js/script.js"></script>
-    <script>
-        const button = document.querySelector('.menuButton')
-        const navegarionMenu = document.querySelector('.navegarionMenu')
-
-
-        const toggleMenu = () => {
-            button.classList.toggle('active')
-            navegarionMenu.classList.toggle('display')
-        }
-    </script>
-</body>
-
+		<section class="projects" id="projects">
+			<div class="heading">
+				<h2>projetos</h2>
+			</div>
+			<div class="projectContent">
+				<div class="projectCard">
+					<img src="img/coming-soon.jpg" alt="coming soon" />
+					<h3>work in progress</h3>
+				</div>
+				<div class="projectCard">
+					<img src="img/coming-soon.jpg" alt="coming soon" />
+					<h3>work in progress</h3>
+				</div>
+				<div class="projectCard">
+					<img src="img/coming-soon.jpg" alt="coming soon" />
+					<h3>work in progress</h3>
+				</div>
+				<div class="projectCard">
+					<img src="img/coming-soon.jpg" alt="coming soon" />
+					<h3>work in progress</h3>
+				</div>
+				<div class="projectCard">
+					<img src="img/coming-soon.jpg" alt="coming soon" />
+					<h3>work in progress</h3>
+				</div>
+			</div>
+		</section>
+		<script src="js/script.js"></script>
+	</body>
 </html>
