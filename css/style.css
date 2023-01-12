@@ -1,626 +1,724 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 * {
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 .white {
-    color: #fff;
+	color: #fff;
 }
 
 .heading {
-    text-transform: uppercase;
-    color: #fff;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background: #111;
-    overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: #111;
+	overflow: hidden;
 }
 
-.home>img {
-    position: absolute;
-    width: 100%;
-    opacity: .1;
-    transform: translate(0, -25px)
+.home > img {
+	position: absolute;
+	width: 100%;
+	opacity: 0.1;
+	transform: translate(0, -25px);
 }
 
 .home .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 50%;
-    width: 100%;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	top: 50%;
+	width: 100%;
+	text-align: center;
 }
 
 .home .presentation .myName {
-    margin: 10px 0;
+	margin: 10px 0;
 }
 
 .home .presentation h2 {
-    display: inline-block;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 300;
+	display: inline-block;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 300;
 }
 
 .home .presentation span {
-    display: inline-block;
+	display: inline-block;
 }
 
 .home .presentation .contactContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 220px;
-    height: 40px;
-    gap: 40px;
-    margin-top: 5px;
-    padding-top: 5px;
-    border-top: #fff solid 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 40px;
+	gap: 40px;
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: #fff solid 1px;
 }
 
 .home .presentation .contactContent div {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    opacity: 1;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	opacity: 1;
 }
 
 .home .presentation .contactContent div img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	opacity: 1;
 }
 
 .home .presentation .contactContent .whatsapp img {
-    width: 24px;
-    transform: translate(0, -2.5px);
+	width: 24px;
+	transform: translate(0, -2.5px);
 }
 
 .home .myName {
-    display: flex;
-    position: relative;
-    width: 458px;
-    padding-top: 8px;
+	display: flex;
+	position: relative;
+	width: 458px;
+	padding-top: 8px;
 }
 
 .home .myName h2 {
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 700;
-    white-space: nowrap;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 700;
+	white-space: nowrap;
 }
 
 .home .myName .cursor {
-    position: relative;
-    top: -3px;
-    font-size: 2em;
-    font-weight: 700;
-    color: #fff;
-    animation: cursor 1s steps(2) infinite;
+	position: relative;
+	top: -3px;
+	font-size: 2em;
+	font-weight: 700;
+	color: #fff;
+	animation: cursor 1s steps(2) infinite;
 }
 
 @keyframes cursor {
+	0%,
+	70% {
+		opacity: 1;
+	}
 
-    0%,
-    70% {
-        opacity: 1;
-    }
-
-    71%,
-    99% {
-        opacity: 0
-    }
+	71%,
+	99% {
+		opacity: 0;
+	}
 }
 
 header {
-    display: flex;
-    width: 100%;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
-    transition: all .5s ease;
+	display: flex;
+	width: 100%;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+	z-index: 1000;
+	transition: all 0.5s ease;
 }
 
 header .linkGithub {
-    width: 100px;
-    justify-content: space-between;
-    align-items: center;
+	width: 100px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 header .linkGithub a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 1.5em;
-    font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	font-weight: 700;
 }
 
 header .linkGithub div {
-    background: #fff;
-    transform: translate(-5px, -4px);
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
+	background: #fff;
+	transform: translate(-5px, -4px);
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
 }
 
 header .linkGithub a img {
-    position: relative;
-    left: -1px;
-    width: 30px;
-    cursor: pointer;
+	position: relative;
+	left: -1px;
+	width: 30px;
+	cursor: pointer;
 }
 
 header .navegarionMenu {
-    display: flex;
+	display: flex;
 }
 
 header .navegarionMenu li {
-    list-style: none;
+	list-style: none;
 }
 
 header .navegarionMenu li a {
-    display: inline-block;
-    margin: 0 15px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #fff;
+	display: inline-block;
+	margin: 0 15px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #fff;
 }
 
 header .menuButton {
-    position: absolute;
-    right: 20px;
-    background: none;
-    border: none;
-    color: #000;
-    visibility: hidden;
-    top: 24px;
-    cursor: pointer;
-    z-index: 1000;
+	position: absolute;
+	right: 20px;
+	background: none;
+	border: none;
+	color: #000;
+	visibility: hidden;
+	top: 24px;
+	cursor: pointer;
+	z-index: 1000;
 }
 
 header .menuButton span {
-    display: block;
-    background: #000;
-    height: 2px;
-    width: 20px;
-    transition: 0.6s;
+	display: block;
+	background: #000;
+	height: 2px;
+	width: 20px;
+	transition: 0.6s;
 }
 
 header .menuButton span::before {
-    display: block;
-    position: relative;
-    top: -7px;
-    content: '';
-    width: 20px;
-    height: 2px;
-    background: #000;
-    transition: 0.6s;
+	display: block;
+	position: relative;
+	top: -7px;
+	content: '';
+	width: 20px;
+	height: 2px;
+	background: #000;
+	transition: 0.6s;
 }
 
 header .menuButton span::after {
-    display: block;
-    position: relative;
-    top: 5px;
-    content: '';
-    width: 20px;
-    height: 2px;
-    background: #000;
-    transition: 0.6s;
+	display: block;
+	position: relative;
+	top: 5px;
+	content: '';
+	width: 20px;
+	height: 2px;
+	background: #000;
+	transition: 0.6s;
 }
 
 header.sticky {
-    background: #ffff;
-    padding: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	background: #ffff;
+	padding: 20px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 header.sticky .linkGithub a,
 header.sticky .navegarionMenu a {
-    color: #000;
+	color: #000;
 }
 
 .about {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 100px 50px;
-    gap: 70px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 100px 50px;
+	gap: 70px;
 }
 
 .about .heading {
-    text-transform: uppercase;
-    color: #000;
+	text-transform: uppercase;
+	color: #000;
 }
 
 .about .aboutContent {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .about .aboutContent .personDescription {
-    aspect-ratio: 16/9;
-    display: flex;
-    align-items: center;
-    padding: 40px;
-    width: 50%;
-    margin-right: 40px;
-    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
+	aspect-ratio: 16/9;
+	display: flex;
+	align-items: center;
+	padding: 40px;
+	width: 50%;
+	margin-right: 40px;
+	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .about .aboutContent .personDescription p {
-    letter-spacing: 1px;
-    text-align: center;
-    color: #000
+	letter-spacing: 1px;
+	text-align: center;
+	color: #000;
 }
 
 .about .imgContent {
-    display: flex;
-    position: relative;
-    right: 3rem;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1/1;
-    width: 30%;
-    border-radius: 50%;
-    background: radial-gradient(#93cfff, #2c40f5);
-    border: solid 6px #008cff;
-    overflow: hidden;
+	display: flex;
+	position: relative;
+	right: 3rem;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 1/1;
+	width: 30%;
+	border-radius: 50%;
+	background: radial-gradient(#93cfff, #2c40f5);
+	border: solid 6px #008cff;
+	overflow: hidden;
 }
 
 .about .imgContent .image {
-    background: url(../img/IMG_20221211_153506.jpg);
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: -4px -15px;
+	background: url(../img/IMG_20221211_153506.jpg);
+	width: 90%;
+	height: 90%;
+	border-radius: 50%;
+	background-size: cover;
+	background-position: -4px -15px;
 }
 
 .skills {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #111;
-    padding: 100px 50px;
-    gap: 70px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background: #111;
+	padding: 100px 50px;
+	gap: 70px;
 }
 
 .skills .header h2 {
-    color: #fff;
-    text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .skills .skillContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
 }
 
 .skills .skillContent .skillCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background: #444;
-    border-radius: 7px;
-    overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #444;
+	border-radius: 7px;
+	overflow: hidden;
 }
 
 .skills .skillContent .skillCard h3 {
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
 }
 
 .skills .skillContent .skillCard span {
-    transition: .5s;
-    opacity: 0;
+	transition: 0.5s;
+	opacity: 0;
 }
 
 .skills .skillContent .skillCard:hover span {
-    opacity: 1;
+	opacity: 1;
 }
 
 .skills .skillContent .skillCard span:nth-child(1) {
-    position: absolute;
-    background: linear-gradient(to right, transparent, #2c40f5);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    animation: animacao1 2s linear infinite;
+	position: absolute;
+	background: linear-gradient(to right, transparent, #2c40f5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	animation: animacao1 2s linear infinite;
 }
 
 @keyframes animacao1 {
-    0% {
-        left: -100%;
-    }
+	0% {
+		left: -100%;
+	}
 
-    100% {
-        left: 100%;
-    }
+	100% {
+		left: 100%;
+	}
 }
 
 .skills .skillContent .skillCard span:nth-child(2) {
-    position: absolute;
-    background: linear-gradient(to bottom, transparent, #2c40f5);
-    top: 0;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    animation: animacao2 2s linear infinite;
-    animation-delay: 1s;
+	position: absolute;
+	background: linear-gradient(to bottom, transparent, #2c40f5);
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	animation: animacao2 2s linear infinite;
+	animation-delay: 1s;
 }
 
 @keyframes animacao2 {
-    0% {
-        top: -100%;
-    }
+	0% {
+		top: -100%;
+	}
 
-    100% {
-        top: 100%;
-    }
+	100% {
+		top: 100%;
+	}
 }
 
 .skills .skillContent .skillCard span:nth-child(3) {
-    position: absolute;
-    background: linear-gradient(to left, transparent, #2c40f5);
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    animation: animacao3 2s linear infinite;
-    animation-delay: 2s;
+	position: absolute;
+	background: linear-gradient(to left, transparent, #2c40f5);
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	animation: animacao3 2s linear infinite;
+	animation-delay: 2s;
 }
 
 @keyframes animacao3 {
-    0% {
-        right: -100%;
-    }
+	0% {
+		right: -100%;
+	}
 
-    100% {
-        right: 100%;
-    }
+	100% {
+		right: 100%;
+	}
 }
 
 .skills .skillContent .skillCard span:nth-child(4) {
-    position: absolute;
-    background: linear-gradient(to top, transparent, #2c40f5);
-    bottom: 0;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    animation: animacao4 2s linear infinite;
-    animation-delay: 3s;
+	position: absolute;
+	background: linear-gradient(to top, transparent, #2c40f5);
+	bottom: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	animation: animacao4 2s linear infinite;
+	animation-delay: 3s;
 }
 
 @keyframes animacao4 {
-    0% {
-        bottom: -100%;
-    }
+	0% {
+		bottom: -100%;
+	}
 
-    100% {
-        bottom: 100%;
-    }
+	100% {
+		bottom: 100%;
+	}
 }
 
 .projects {
-    background: #111;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 100px 50px;
-    gap: 70px;
+	background: #111;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 100px 50px;
+	gap: 70px;
 }
 
 .projects .heading {
-    text-transform: uppercase;
-    color: #fff;
+	text-transform: uppercase;
+	color: #fff;
 }
 
 .projects .projectContent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
 }
 
 .projects .projectCard {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    aspect-ratio: 16/9;
-    min-width: 300px;
-    overflow: hidden;
-    transition: .4s ease;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	aspect-ratio: 16/9;
+	min-width: 300px;
+	overflow: hidden;
+	transition: 0.4s ease;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
 .projects .projectCard img {
-    position: absolute;
-    width: 100%;
-    opacity: 1;
-    filter: blur(3px);
+	position: absolute;
+	width: 100%;
+	opacity: 1;
+	filter: blur(3px);
 }
 
 .projects .projectCard h3 {
-    text-transform: uppercase;
-    font-size: .9em;
-    z-index: 1000;
-    color: #fff;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	z-index: 1000;
+	color: #fff;
 }
 
-.projects .projectCard:hover {
-    transform: scale(1.2);
-    font-size: 1.6em;
+.projects .scaleUp:hover {
+	transform: scale(1.2);
+	font-size: 1.6em;
+}
+
+div.boxProjectCard {
+	display: none;
+	position: fixed;
+	top: calc(50% + 34px);
+	left: 50%;
+	width: 80%;
+	min-width: 661px;
+	background-color: #333;
+	z-index: 1000;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+
+div.boxProjectCard.projectActive {
+	display: block;
+}
+
+/*botão de fechar*/
+div.boxProjectCard > span {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+div.boxProjectCard > span::after,
+div.boxProjectCard > span::before {
+	position: absolute;
+	top: 9px;
+	display: block;
+	content: '';
+	width: 20px;
+	height: 2px;
+	background: #111;
+}
+
+div.boxProjectCard > span::after {
+	transform: rotate(45deg);
+}
+
+div.boxProjectCard > span::before {
+	transform: rotate(-45deg);
+}
+
+div.boxProjectCard > div.boxHeader {
+	margin: 15px 10px 0;
+	color: #eee;
+}
+
+div.boxProjectCard > div.boxAbout {
+	display: inline-block;
+	width: 25%;
+	position: absolute;
+	transform: translateY(15px);
+	color: #eee;
+}
+
+div.boxProjectCard > div.boxVideo {
+	display: inline-block;
+	width: 70%;
+	margin: 20px 10px;
+}
+
+div.boxProjectCard > div.boxVideo > video {
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* responsividade */
 
 @media (max-width: 760px) {
-    header {
-        padding: 20px;
-    }
+	header {
+		padding: 20px;
+	}
 
-    .about .aboutContent {
-        flex-direction: column-reverse;
-        gap: 30px;
-    }
+	.about .aboutContent {
+		flex-direction: column-reverse;
+		gap: 30px;
+	}
 
-    .about .aboutContent .personDescription {
-        margin: 0;
-        width: 100%;
-    }
+	.about .aboutContent .personDescription {
+		margin: 0;
+		width: 100%;
+	}
 
-    .about .imgContent {
-        width: 80%;
-        right: 0;
-    }
+	.about .imgContent {
+		width: 80%;
+		right: 0;
+	}
 
-    .projects .projectCard {
-        width: 100%;
-    }
+	.projects .projectCard {
+		width: 100%;
+	}
 
-    .projects .projectCard:hover {
-        transform: scale(1);
-    }
+	.projects .scaleUp:hover {
+		transform: scale(1.1);
+	}
+
+	div.boxProjectCard {
+		width: calc(100% - 20px);
+		margin: 10px;
+		max-width: 661px;
+		min-width: auto;
+		transform: translate(calc(-50% - 10px), -50%);
+	}
+
+	
+
+	div.boxProjectCard > div.boxVideo {
+		display: block;
+		width: calc(100% - 20px);
+	}
+
+	div.boxProjectCard > div.boxAbout {
+		display: block;
+		position: static;
+		width: calc(100% - 20px);
+		margin: 10px;
+		transform: translate(0, 0);
+	}
 }
 
 @media (max-width: 530px) {
-    * {
-        scroll-behavior: auto;
-    }
+	* {
+		scroll-behavior: auto;
+	}
 
-    .skills .skillContent {
-        flex-direction: column;
-        width: 100%;
-    }
+	.skills .skillContent {
+		flex-direction: column;
+		width: 100%;
+	}
 
-    .skills .skillContent .skillCard {
-        width: 100%;
-        height: 200px;
-    }
+	.skills .skillContent .skillCard {
+		width: 100%;
+		height: 200px;
+	}
 
-    .home .presentation .myName {
-        transform: translateX(113.25px);
-    }
+	.home .presentation .myName {
+		transform: translateX(113.25px);
+	}
 
-    .home .presentation .myName h2,
-    .home .presentation .myName span {
-        text-align: center;
-        font-size: 1rem;
-    }
+	.home .presentation .myName h2,
+	.home .presentation .myName span {
+		text-align: center;
+		font-size: 1rem;
+	}
 
-    header {
-        flex-direction: column;
-        background: #fff;
-    }
+	header {
+		flex-direction: column;
+		background: #fff;
+	}
 
-    header .linkGithub {
-        align-self: flex-start;
-        z-index: 1000;
-    }
+	header .linkGithub {
+		align-self: flex-start;
+		z-index: 1000;
+	}
 
-    header .linkGithub a {
-        color: #000;
-    }
+	header .linkGithub a {
+		color: #000;
+	}
 
-    header .menuButton {
-        visibility: visible;
-        display: block;
-        cursor: pointer;
-        width: 20px;
-        height: 20px;
-    }
+	header .menuButton {
+		visibility: visible;
+		display: block;
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+	}
 
-    header .menuButton.active>span {
-        background: transparent;
-    }
+	header .menuButton.active > span {
+		background: transparent;
+	}
 
-    header .menuButton.active span::before {
-        transform-origin: center;
-        transform: translate(0, 7px) rotate(-135deg);
-    }
+	header .menuButton.active span::before {
+		transform-origin: center;
+		transform: translate(0, 7px) rotate(-135deg);
+	}
 
-    header .menuButton.active span::after {
-        transform-origin: center;
-        transform: translate(0, -7px) rotate(135deg);
-    }
+	header .menuButton.active span::after {
+		transform-origin: center;
+		transform: translate(0, -7px) rotate(135deg);
+	}
 
-    header .navegarionMenu {
-        visibility: hidden;
-        overflow: hidden;
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-        top: 68px;
-        background: #fff;
-        width: 100%;
-        height: 0;
-        transition: 0.4s;
-    }
+	header .navegarionMenu {
+		visibility: hidden;
+		overflow: hidden;
+		position: absolute;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		top: 68px;
+		background: #fff;
+		width: 100%;
+		height: 0;
+		transition: 0.4s;
+	}
 
-    header .navegarionMenu.display {
-        visibility: visible;
-        height: calc(100vh - 68px);
-    }
+	header .navegarionMenu.display {
+		visibility: visible;
+		height: calc(100vh - 68px);
+	}
 
-    header .navegarionMenu li a {
-        color: #000;
-    }
+	header .navegarionMenu li a {
+		color: #000;
+	}
 }
 
 @media (max-width: 450px) {
+	.about,
+	.skills,
+	.projects {
+		padding: 100px 10px;
+	}
 
-    .about,
-    .skills,
-    .projects {
-        padding: 100px 10px;
-    }
+	.about .aboutContent .personDescription {
+		padding: 0;
+	}
 
-    .about .aboutContent .personDescription {
-        padding: 0;
-    }
+	.projects .scaleUp:hover {
+		transform: scale(1);
+	}
 
-    .projects .projectContent .projectCard {
-        min-width: auto;
-    }
-
+	.projects .projectContent .projectCard {
+		min-width: auto;
+	}
 }
