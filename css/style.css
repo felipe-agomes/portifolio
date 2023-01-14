@@ -8,13 +8,9 @@
 	scroll-behavior: smooth;
 }
 
-.white {
-	color: #fff;
-}
-
 .heading {
 	text-transform: uppercase;
-	color: #fff;
+	color: #bbb;
 }
 
 .home {
@@ -52,7 +48,7 @@
 
 .home .presentation h2 {
 	display: inline-block;
-	color: #fff;
+	color: #bbb;
 	font-size: 1em;
 	font-weight: 300;
 }
@@ -96,23 +92,32 @@
 .home .myName {
 	display: flex;
 	position: relative;
-	width: 458px;
+	max-width: 458px;
+	width: 100%;
 	padding-top: 8px;
+	flex-direction: column;
+	align-self: center;
 }
 
-.home .myName h2 {
+.home .myName > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home .myName > div > h2 {
 	text-transform: uppercase;
 	font-size: 2em;
 	font-weight: 700;
 	white-space: nowrap;
 }
 
-.home .myName .cursor {
+.home .myName > div > .cursor {
 	position: relative;
 	top: -3px;
 	font-size: 2em;
 	font-weight: 700;
-	color: #fff;
+	color: #bbb;
 	animation: cursor 1s steps(2) infinite;
 }
 
@@ -150,7 +155,7 @@ header .linkGithub a {
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	color: #fff;
+	color: #bbb;
 	letter-spacing: 1px;
 	font-size: 1.5em;
 	font-weight: 700;
@@ -171,6 +176,11 @@ header .linkGithub a img {
 	cursor: pointer;
 }
 
+header > .linkGithub > a > h2 {
+	font-size: 1em;
+	margin-left: 10px;
+}
+
 header .navegarionMenu {
 	display: flex;
 }
@@ -184,7 +194,7 @@ header .navegarionMenu li a {
 	margin: 0 15px;
 	letter-spacing: 1px;
 	text-decoration: none;
-	color: #fff;
+	color: #bbb;
 }
 
 header .menuButton {
@@ -264,8 +274,6 @@ header.sticky .navegarionMenu a {
 
 .about .aboutContent .personDescription {
 	aspect-ratio: 16/9;
-	display: flex;
-	align-items: center;
 	padding: 40px;
 	width: 50%;
 	margin-right: 40px;
@@ -274,8 +282,13 @@ header.sticky .navegarionMenu a {
 
 .about .aboutContent .personDescription p {
 	letter-spacing: 1px;
-	text-align: center;
+	margin-bottom: 2rem;
+	/* text-align: center; */
 	color: #000;
+}
+
+.about .aboutContent .personDescription ul {
+	margin: 0 0 10px 17px;
 }
 
 .about .imgContent {
@@ -293,12 +306,11 @@ header.sticky .navegarionMenu a {
 }
 
 .about .imgContent .image {
-	background: url(../img/IMG_20221211_153506.jpg);
+	background-image: url('../img/IMG_20221211_154625.jpg');
 	width: 90%;
 	height: 90%;
 	border-radius: 50%;
 	background-size: cover;
-	background-position: -4px -15px;
 }
 
 .skills {
@@ -312,7 +324,7 @@ header.sticky .navegarionMenu a {
 }
 
 .skills .header h2 {
-	color: #fff;
+	color: #bbb;
 	text-transform: uppercase;
 }
 
@@ -447,7 +459,7 @@ header.sticky .navegarionMenu a {
 
 .projects .heading {
 	text-transform: uppercase;
-	color: #fff;
+	color: #bbb;
 }
 
 .projects .projectContent {
@@ -553,6 +565,10 @@ div.boxProjectCard > div.boxAbout {
 	color: #eee;
 }
 
+body > div > div.boxAbout > h2 {
+	margin-bottom: 10px;
+}
+
 div.boxProjectCard > div.boxVideo {
 	display: inline-block;
 	width: 70%;
@@ -603,8 +619,6 @@ div.boxProjectCard > div.boxVideo > video {
 		transform: translate(calc(-50% - 10px), -50%);
 	}
 
-	
-
 	div.boxProjectCard > div.boxVideo {
 		display: block;
 		width: calc(100% - 20px);
@@ -634,14 +648,13 @@ div.boxProjectCard > div.boxVideo > video {
 		height: 200px;
 	}
 
-	.home .presentation .myName {
-		transform: translateX(113.25px);
+	#home > div > div.myName > div > h2,
+	#home > div > div.myName > div > span {
+		font-size: 1rem;
 	}
 
-	.home .presentation .myName h2,
-	.home .presentation .myName span {
-		text-align: center;
-		font-size: 1rem;
+	#home > div > div.myName > div > span {
+		transform: translateY(2px);
 	}
 
 	header {
@@ -718,9 +731,5 @@ div.boxProjectCard > div.boxVideo > video {
 
 	.projects .scaleUp:hover {
 		transform: scale(1);
-	}
-
-	.projects .projectContent .projectCard {
-		min-width: auto;
 	}
 }
