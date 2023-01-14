@@ -726,7 +726,7 @@ div.boxProjectCard > div.boxVideo > video {
 	}
 
 	.about .aboutContent .personDescription {
-		padding: 0;
+		padding: 10px;
 	}
 
 	.projects .scaleUp:hover {
