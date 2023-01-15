@@ -310,6 +310,10 @@ section.home > div.presentation > div.contactContent > div.whatsapp img {
 	letter-spacing: 3px;
 }
 
+.skills .skillContent .skillCard > img {
+	width: 128px;
+}
+
 .skills .skillContent .skillCard span {
 	transition: 0.5s;
 	opacity: 0;
