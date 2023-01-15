@@ -39,7 +39,7 @@ header > ul.navegationMenu > li {
 	list-style: none;
 }
 
-header > ul.navegationMenu > li > a {
+header .navegationMenu li a {
 	display: inline-block;
 	margin: 0 15px;
 	letter-spacing: 1px;
@@ -239,7 +239,7 @@ section.home > div.presentation > div.contactContent > div.whatsapp img {
 	color: #000;
 }
 
-#about > div.aboutContent > div.personDescription > p:nth-child(3) {
+#about > div.aboutContent > div.personDescription > p:nth-child(2) {
 	margin: 0;
 }
 

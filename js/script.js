@@ -1,4 +1,3 @@
-// const section = document.querySelectorAll('section')
 const button = document.querySelector('.menuButton')
 const navegarionMenu = document.querySelector('.navegationMenu')
 const myNameSelector = document.querySelector('#myName')
@@ -95,3 +94,4 @@ arrayProjects.forEach((project) => {
 })
 
 typing(arrayMyName, myNameSelector)
+
