@@ -13,83 +13,127 @@
 	color: #bbb;
 }
 
-.home {
+header {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+	z-index: 1000;
+	transition: all 0.5s ease;
+}
+
+body > header > div.linkGithub > a {
+	text-decoration: none;
+	color: #bbb;
+	letter-spacing: 1.5px;
+	font-size: 1em;
+}
+
+header > ul.navegationMenu {
+	display: flex;
+}
+
+header > ul.navegationMenu > li {
+	list-style: none;
+}
+
+header > ul.navegationMenu > li > a {
+	display: inline-block;
+	margin: 0 15px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #bbb;
+}
+
+header > .menuButton {
+	position: absolute;
+	right: 20px;
+	background: none;
+	border: none;
+	color: #000;
+	visibility: hidden;
+	top: 24px;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+header > .menuButton span {
+	display: block;
+	background: #000;
+	height: 2px;
+	width: 20px;
+	transition: 0.6s;
+}
+
+header > .menuButton span::before {
+	content: '';
+	display: block;
+	position: relative;
+	top: -7px;
+	width: 20px;
+	height: 2px;
+	background: #000;
+	transition: 0.6s;
+}
+
+header > .menuButton span::after {
+	content: '';
+	display: block;
+	position: relative;
+	top: 5px;
+	width: 20px;
+	height: 2px;
+	background: #000;
+	transition: 0.6s;
+}
+
+header.sticky {
+	background: #ffff;
+	padding: 20px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky div.linkGithub a,
+header.sticky .navegationMenu a {
+	color: #000;
+}
+
+section.home {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	position: relative;
 	height: 100vh;
-	width: 100%;
 	background: #111;
 	overflow: hidden;
 }
 
-.home > img {
+section.home > img {
 	position: absolute;
 	width: 100%;
 	opacity: 0.1;
 	transform: translate(0, -25px);
 }
 
-.home .presentation {
+section.home > div.presentation {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	top: 50%;
-	width: 100%;
 	text-align: center;
 }
 
-.home .presentation .myName {
-	margin: 10px 0;
-}
-
-.home .presentation h2 {
-	display: inline-block;
+section.home > div.presentation h2 {
 	color: #bbb;
 	font-size: 1em;
 	font-weight: 300;
 }
 
-.home .presentation span {
-	display: inline-block;
-}
-
-.home .presentation .contactContent {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 220px;
-	height: 40px;
-	gap: 40px;
-	margin-top: 5px;
-	padding-top: 5px;
-	border-top: #fff solid 1px;
-}
-
-.home .presentation .contactContent div {
-	position: relative;
-	width: 20px;
-	height: 20px;
-	opacity: 1;
-}
-
-.home .presentation .contactContent div img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	opacity: 1;
-}
-
-.home .presentation .contactContent .whatsapp img {
-	width: 24px;
-	transform: translate(0, -2.5px);
-}
-
-.home .myName {
+section.home > div.presentation > div.myName {
+	margin: 10px 0;
 	display: flex;
 	position: relative;
 	max-width: 458px;
@@ -99,20 +143,20 @@
 	align-self: center;
 }
 
-.home .myName > div {
+section.home > div.presentation > div.myName > div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.home .myName > div > h2 {
+section.home > div.presentation > div.myName > div > h2 {
 	text-transform: uppercase;
 	font-size: 2em;
 	font-weight: 700;
 	white-space: nowrap;
 }
 
-.home .myName > div > .cursor {
+section.home > div.presentation > div.myName > div > span.cursor {
 	position: relative;
 	top: -3px;
 	font-size: 2em;
@@ -133,121 +177,30 @@
 	}
 }
 
-header {
-	display: flex;
-	width: 100%;
-	position: fixed;
-	justify-content: space-between;
-	align-items: center;
-	padding: 40px 100px;
-	z-index: 1000;
-	transition: all 0.5s ease;
-}
-
-header .linkGithub {
-	width: 100px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header .linkGithub a {
+section.home > div.presentation > div.contactContent {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-decoration: none;
-	color: #bbb;
-	letter-spacing: 1px;
-	font-size: 1.5em;
-	font-weight: 700;
+	width: 220px;
+	height: 40px;
+	gap: 40px;
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: #fff solid 1px;
 }
 
-header .linkGithub div {
-	background: #fff;
-	transform: translate(-5px, -4px);
-	width: 28px;
-	height: 28px;
-	border-radius: 50%;
-}
-
-header .linkGithub a img {
-	position: relative;
-	left: -1px;
-	width: 30px;
-	cursor: pointer;
-}
-
-header > .linkGithub > a > h2 {
-	font-size: 1em;
-	margin-left: 10px;
-}
-
-header .navegarionMenu {
-	display: flex;
-}
-
-header .navegarionMenu li {
-	list-style: none;
-}
-
-header .navegarionMenu li a {
-	display: inline-block;
-	margin: 0 15px;
-	letter-spacing: 1px;
-	text-decoration: none;
-	color: #bbb;
-}
-
-header .menuButton {
-	position: absolute;
-	right: 20px;
-	background: none;
-	border: none;
-	color: #000;
-	visibility: hidden;
-	top: 24px;
-	cursor: pointer;
-	z-index: 1000;
-}
-
-header .menuButton span {
-	display: block;
-	background: #000;
-	height: 2px;
+section.home > div.presentation > div.contactContent > div {
 	width: 20px;
-	transition: 0.6s;
+	height: 20px;
 }
 
-header .menuButton span::before {
-	display: block;
-	position: relative;
-	top: -7px;
-	content: '';
-	width: 20px;
-	height: 2px;
-	background: #000;
-	transition: 0.6s;
+section.home > div.presentation > div.contactContent > div img {
+	width: 100%;
 }
 
-header .menuButton span::after {
-	display: block;
-	position: relative;
-	top: 5px;
-	content: '';
-	width: 20px;
-	height: 2px;
-	background: #000;
-	transition: 0.6s;
-}
-
-header.sticky {
-	background: #ffff;
-	padding: 20px;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
-
-header.sticky .linkGithub a,
-header.sticky .navegarionMenu a {
-	color: #000;
+section.home > div.presentation > div.contactContent > div.whatsapp img {
+	width: 24px;
+	transform: translate(0, -2.5px);
 }
 
 .about {
@@ -280,15 +233,14 @@ header.sticky .navegarionMenu a {
 	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.about .aboutContent .personDescription p {
+#about > div.aboutContent > div.personDescription > p {
 	letter-spacing: 1px;
 	margin-bottom: 2rem;
-	/* text-align: center; */
 	color: #000;
 }
 
-.about .aboutContent .personDescription ul {
-	margin: 0 0 10px 17px;
+#about > div.aboutContent > div.personDescription > p:nth-child(3) {
+	margin: 0;
 }
 
 .about .imgContent {
@@ -662,12 +614,12 @@ div.boxProjectCard > div.boxVideo > video {
 		background: #fff;
 	}
 
-	header .linkGithub {
+	body > header > div.linkGithub {
 		align-self: flex-start;
 		z-index: 1000;
 	}
 
-	header .linkGithub a {
+	body > header > div.linkGithub a {
 		color: #000;
 	}
 
@@ -693,7 +645,7 @@ div.boxProjectCard > div.boxVideo > video {
 		transform: translate(0, -7px) rotate(135deg);
 	}
 
-	header .navegarionMenu {
+	header .navegationMenu {
 		visibility: hidden;
 		overflow: hidden;
 		position: absolute;
@@ -708,12 +660,12 @@ div.boxProjectCard > div.boxVideo > video {
 		transition: 0.4s;
 	}
 
-	header .navegarionMenu.display {
+	header .navegationMenu.display {
 		visibility: visible;
 		height: calc(100vh - 68px);
 	}
 
-	header .navegarionMenu li a {
+	header .navegationMenu li a {
 		color: #000;
 	}
 }

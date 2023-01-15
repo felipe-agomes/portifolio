@@ -1,6 +1,6 @@
-const section = document.querySelectorAll('section')
+// const section = document.querySelectorAll('section')
 const button = document.querySelector('.menuButton')
-const navegarionMenu = document.querySelector('.navegarionMenu')
+const navegarionMenu = document.querySelector('.navegationMenu')
 const myNameSelector = document.querySelector('#myName')
 const arrayProjects = document.querySelectorAll('.projectCard')
 const boxProjectCard = document.querySelector('.boxProjectCard')
@@ -29,7 +29,7 @@ window.addEventListener('scroll', function () {
 	header.classList.toggle('sticky', window.scrollY > 0)
 })
 
-const typing = (arr, selector, time=100) => {
+const typing = (arr, selector, time = 100) => {
 	arr.forEach((element, i) => {
 		setTimeout(() => {
 			selector.innerHTML += element
@@ -37,6 +37,7 @@ const typing = (arr, selector, time=100) => {
 	})
 }
 
+// eslint-disable-next-line no-unused-vars
 const toggleMenu = () => {
 	button.classList.toggle('active')
 	navegarionMenu.classList.toggle('display')
@@ -72,7 +73,10 @@ const displayBoxProjects = ({ target }) => {
 	toggleBoxProjects()
 
 	for (let i = 0; i < arrProjectVideo.length; i++) {
-		if (arrProjectVideo[i].title.toUpperCase() == target.parentNode.innerText) {
+		if (
+			arrProjectVideo[i].title.toUpperCase() ==
+			target.parentNode.innerText
+		) {
 			const aboutTitle = document.querySelector('.boxAbout > h2')
 			const aboutContent = document.querySelector('.boxAbout > p')
 			const boxHeader = document.querySelector('.boxHeader > h2')
@@ -85,7 +89,7 @@ const displayBoxProjects = ({ target }) => {
 		}
 	}
 }
- 
+
 arrayProjects.forEach((project) => {
 	project.addEventListener('click', displayBoxProjects)
 })
