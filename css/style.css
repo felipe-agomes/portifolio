@@ -231,6 +231,9 @@ section.home > div.presentation > div.contactContent > div.whatsapp img {
 	width: 50%;
 	margin-right: 40px;
 	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #about > div.aboutContent > div.personDescription > p {
