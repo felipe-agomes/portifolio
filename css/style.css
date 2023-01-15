@@ -255,8 +255,8 @@ section.home > div.presentation > div.contactContent > div.whatsapp img {
 	aspect-ratio: 1/1;
 	width: 30%;
 	border-radius: 50%;
-	background: radial-gradient(#93cfff, #2c40f5);
-	border: solid 6px #008cff;
+	background: radial-gradient(#fff, #000);
+	border: solid 6px #444;
 	overflow: hidden;
 }
 
