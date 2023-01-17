@@ -1,4 +1,5 @@
 const button = document.querySelector('.menuButton')
+const boxButtom = document.querySelector('.boxButtom')
 const navegarionMenu = document.querySelector('.navegationMenu')
 const myNameSelector = document.querySelector('#myName')
 const arrayProjects = document.querySelectorAll('.projectCard')
@@ -13,6 +14,8 @@ const arrProjectVideo = [
 		aboutContent:
 			'Meu próprio portfólio é o primeiro dos projetos criados por mim, nele tentei ser o mais minimalista possível, e ao mesmo tempo utilizando algumas tecnicas que conheci durante meu aprendizado',
 		src: '../video/MyPortfolio.mp4',
+		linkRepositorio: 'https://github.com/felipe-AGomes/portifolio',
+		linkLinkedin: 'https://github.com/felipe-AGomes/portifolio',
 	},
 	{
 		title: 'Jogo da Memória',
@@ -20,6 +23,8 @@ const arrProjectVideo = [
 		aboutContent:
 			'Um jogo da Memória criado com apenas JavaScript puro, HTML e CSS. Esse foi uma ideia de um projeto para praticar a lógica de programação e exeritar um pouco',
 		src: '../video/jogoDaMemoria.mp4',
+		linkRepositorio: 'https://github.com/felipe-AGomes/jogo-da-memoria',
+		linkLinkedin: '',
 	},
 ]
 
@@ -55,6 +60,7 @@ const toggleBoxProjects = () => {
 			element.classList.add('scaleUp')
 			element.addEventListener('click', displayBoxProjects)
 			element.style.filter = ''
+			element.style.cursor = 'pointer'
 		})
 		return
 	}
@@ -63,6 +69,7 @@ const toggleBoxProjects = () => {
 	arrayProjects.forEach((element) => {
 		element.classList.remove('scaleUp')
 		element.removeEventListener('click', displayBoxProjects)
+		element.style.cursor = 'default'
 	})
 }
 
@@ -85,6 +92,20 @@ const displayBoxProjects = ({ target }) => {
 			boxHeader.innerHTML = arrProjectVideo[i].title
 			aboutTitle.innerHTML = arrProjectVideo[i].aboutTitle
 			aboutContent.innerHTML = arrProjectVideo[i].aboutContent
+			if (arrProjectVideo[i].linkLinkedin) {
+				const div = document.createElement('div')
+				boxButtom.appendChild(div)
+				const a = document.createElement('a')
+				div.appendChild(a)
+				const h3 = document.createElement('h3')
+				div.appendChild(h3)
+				h3.innerHTML = 'Linkedin'
+				a.setAttribute('href', arrProjectVideo[i].linkLinkedin)
+				a.setAttribute('target', '_blank')
+				return
+			}
+			document.querySelector("div.boxButtom > div:nth-child(2)").remove()
+
 		}
 	}
 }
