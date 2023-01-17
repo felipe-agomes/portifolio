@@ -469,51 +469,52 @@ div.boxProjectCard {
 	position: fixed;
 	top: calc(50% + 34px);
 	left: 50%;
-	width: 80%;
+	width: 100%;
+	max-width: 921px;
 	min-width: 661px;
 	background-color: #333;
 	z-index: 1000;
 	transform: translate(-50%, -50%);
-	border-radius: 10px;
+	border-radius: 20px;
 }
 
 div.boxProjectCard.projectActive {
 	display: block;
 }
 
-/*botão de fechar*/
-div.boxProjectCard > span {
+div.boxProjectCard > div.boxHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 10px 0;
+	color: #eee;
+}
+
+div.boxProjectCard > div.boxHeader > span {
+	position: relative;
 	display: block;
-	position: absolute;
-	right: 20px;
-	top: 30px;
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
 }
 
-div.boxProjectCard > span::after,
-div.boxProjectCard > span::before {
+div.boxProjectCard > div.boxHeader > span::after,
+div.boxProjectCard > div.boxHeader > span::before {
 	position: absolute;
-	top: 9px;
 	display: block;
 	content: '';
+	top: 50%;
 	width: 20px;
 	height: 2px;
 	background: #111;
 }
 
-div.boxProjectCard > span::after {
+div.boxProjectCard > div.boxHeader > span::after {
 	transform: rotate(45deg);
 }
 
-div.boxProjectCard > span::before {
+div.boxProjectCard > div.boxHeader > span::before {
 	transform: rotate(-45deg);
-}
-
-div.boxProjectCard > div.boxHeader {
-	margin: 15px 10px 0;
-	color: #eee;
 }
 
 div.boxProjectCard > div.boxAbout {
@@ -538,6 +539,39 @@ div.boxProjectCard > div.boxVideo > video {
 	width: 100%;
 	border-radius: 5px;
 	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+div.boxProjectCard > div.boxButtom {
+	display: flex;
+}
+
+div.boxProjectCard > div.boxButtom > div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 97px;
+	height: 34px;
+	background: #111;
+	margin: 0 15px 20px 10px;
+	border-radius: 5px;
+	color: rgba(255, 255, 255, 0.76);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+div.boxProjectCard > div.boxButtom > div#buttom {
+}
+
+div.boxProjectCard > div.boxButtom > div#buttom > a {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+div.boxProjectCard > div.boxButtom > div#buttom:hover {
+	box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* responsividade */
