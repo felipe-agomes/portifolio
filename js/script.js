@@ -86,9 +86,11 @@ const displayBoxProjects = ({ target }) => {
 			const aboutTitle = document.querySelector('.boxAbout > h2')
 			const aboutContent = document.querySelector('.boxAbout > p')
 			const boxHeader = document.querySelector('.boxHeader > h2')
+			const repositorio = document.querySelector(".boxButtom > div:nth-child(1) > a")
 			const video = arrProjectVideo[i].src
 
 			videoElement.setAttribute('src', video)
+			repositorio.setAttribute('href', arrProjectVideo[i].linkRepositorio)
 			boxHeader.innerHTML = arrProjectVideo[i].title
 			aboutTitle.innerHTML = arrProjectVideo[i].aboutTitle
 			aboutContent.innerHTML = arrProjectVideo[i].aboutContent
