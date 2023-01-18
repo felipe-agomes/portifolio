@@ -92,7 +92,10 @@ const displayBoxProjects = ({ target }) => {
 			boxHeader.innerHTML = arrProjectVideo[i].title
 			aboutTitle.innerHTML = arrProjectVideo[i].aboutTitle
 			aboutContent.innerHTML = arrProjectVideo[i].aboutContent
-			if (arrProjectVideo[i].linkLinkedin) {
+			if (arrProjectVideo[i].linkLinkedin !== '') {
+				if (boxButtom.childElementCount > 1) {
+					return
+				}
 				const div = document.createElement('div')
 				boxButtom.appendChild(div)
 				const a = document.createElement('a')

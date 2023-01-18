@@ -114,7 +114,7 @@ section.home {
 section.home > img {
 	position: absolute;
 	width: 100%;
-	/* opacity: 0.1; */
+	opacity: 0.1;
 	transform: translate(0, -25px);
 }
 
@@ -493,8 +493,8 @@ div.boxProjectCard > div.boxHeader {
 div.boxProjectCard > div.boxHeader > span {
 	position: relative;
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
 }
 
@@ -504,7 +504,7 @@ div.boxProjectCard > div.boxHeader > span::before {
 	display: block;
 	content: '';
 	top: 50%;
-	width: 20px;
+	width: 40px;
 	height: 2px;
 	background: #111;
 }
