@@ -12,7 +12,7 @@ const arrProjectVideo = [
 		title: 'Portfólio',
 		aboutTitle: 'Sobre Portfólio',
 		aboutContent:
-			'Meu próprio portfólio é o primeiro dos projetos criados por mim, nele tentei ser o mais minimalista possível, e ao mesmo tempo utilizando algumas tecnicas que conheci durante meu aprendizado',
+			'E é com orgulho que lhes apresento meu primeiro projeto, meu próprio portfólio, durante a criação dele fui me desenvolvendo ele foi um projeto que por diversos momentos ficou meio parado por falta de conhecimento, mas com o passar do tempo foi possível me aprimorar até finalmente conseguir finaliza-lo. Nele meu objetivo foi ser minimalista ao mesmo tempo aplicar o máximo de conhecimento possível',
 		src: '../video/MyPortfolio.mp4',
 		linkRepositorio: 'https://github.com/felipe-AGomes/portifolio',
 		linkLinkedin: 'https://github.com/felipe-AGomes/portifolio',
@@ -21,7 +21,7 @@ const arrProjectVideo = [
 		title: 'Jogo da Memória',
 		aboutTitle: 'Sobre Jogo da Memória',
 		aboutContent:
-			'Um jogo da Memória criado com apenas JavaScript puro, HTML e CSS. Esse foi uma ideia de um projeto para praticar a lógica de programação e exeritar um pouco',
+			'Um jogo da Memória criado com apenas JavaScript puro, HTML e CSS. Esse é um projeto simples mas com muita logica por trás, foi um projeto que acrescentou muito no aprendizado e em alguns momentos nas dores de cabeça também 😢.',
 		src: '../video/jogoDaMemoria.mp4',
 		linkRepositorio: 'https://github.com/felipe-AGomes/jogo-da-memoria',
 		linkLinkedin: '',
