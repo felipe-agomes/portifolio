@@ -94,4 +94,3 @@ arrayProjects.forEach((project) => {
 })
 
 typing(arrayMyName, myNameSelector)
-
